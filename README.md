@@ -5,3 +5,5 @@
 [![Xcode 8.0+](https://img.shields.io/badge/Xcode-8.0+-blue.svg?style=flat)](https://developer.apple.com/swift/)
 
 Project inspired by [concept](https://dribbble.com/shots/2242263--1-Pull-to-refresh-Freebie-Weather-Concept) of [Yup Nguyen](https://dribbble.com/yupnguyen)
+
+![capture_umbrella_refresh](gif/umbrella_refresh.gif "capture_umbrella_refresh")
