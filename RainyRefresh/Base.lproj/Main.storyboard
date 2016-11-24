@@ -6,7 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,33 +40,63 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GLO-5s-DR4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="111" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GLO-5s-DR4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="110" id="IwK-1e-gkP">
-                                        <rect key="frame" x="0.0" y="22" width="375" height="110"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="111" id="IwK-1e-gkP" customClass="CustomCell" customModule="RainyRefresh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IwK-1e-gkP" id="jam-8H-i1t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwZ-32-s0y">
-                                                    <rect key="frame" x="16" y="8" width="240" height="46"/>
-                                                    <color key="backgroundColor" red="0.92156862750000001" green="0.0" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CF-MH-oN7">
+                                                    <rect key="frame" x="43" y="26" width="66" height="66"/>
+                                                    <color key="backgroundColor" red="0.68627450980392157" green="0.6705882352941176" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="240" id="WB9-dA-YG4"/>
-                                                        <constraint firstAttribute="height" constant="46" id="cN3-0L-a09"/>
+                                                        <constraint firstAttribute="width" secondItem="7CF-MH-oN7" secondAttribute="height" multiplier="1:1" id="kh3-9o-YKI"/>
                                                     </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UP-fs-zJu">
+                                                    <rect key="frame" x="128" y="26" width="198" height="10"/>
+                                                    <color key="backgroundColor" red="0.68627450980000004" green="0.6705882353" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usT-3w-ojV">
+                                                    <rect key="frame" x="128" y="48" width="198" height="10"/>
+                                                    <color key="backgroundColor" red="0.68627450980000004" green="0.6705882353" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLW-9V-SN5">
+                                                    <rect key="frame" x="128" y="70" width="148" height="10"/>
+                                                    <color key="backgroundColor" red="0.68627450980000004" green="0.6705882353" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.8666666666666667" green="0.85882352941176465" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="OwZ-32-s0y" firstAttribute="leading" secondItem="jam-8H-i1t" secondAttribute="leading" constant="16" id="UAl-Nm-hZ8"/>
-                                                <constraint firstAttribute="topMargin" secondItem="OwZ-32-s0y" secondAttribute="top" id="Yv5-zL-6wl"/>
+                                                <constraint firstItem="7CF-MH-oN7" firstAttribute="width" secondItem="jam-8H-i1t" secondAttribute="width" multiplier="0.178" id="26H-d4-u02"/>
+                                                <constraint firstItem="usT-3w-ojV" firstAttribute="top" secondItem="0UP-fs-zJu" secondAttribute="bottom" constant="12" id="7w5-kb-DsM"/>
+                                                <constraint firstItem="7CF-MH-oN7" firstAttribute="leading" secondItem="jam-8H-i1t" secondAttribute="leadingMargin" constant="35" id="Fjc-tq-Rqc"/>
+                                                <constraint firstItem="zLW-9V-SN5" firstAttribute="top" secondItem="usT-3w-ojV" secondAttribute="bottom" constant="12" id="FsZ-Mr-eWh"/>
+                                                <constraint firstItem="zLW-9V-SN5" firstAttribute="leading" secondItem="usT-3w-ojV" secondAttribute="leading" id="GFJ-kr-8WB"/>
+                                                <constraint firstItem="zLW-9V-SN5" firstAttribute="height" secondItem="usT-3w-ojV" secondAttribute="height" id="JUY-qe-Rfb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0UP-fs-zJu" secondAttribute="trailing" constant="41" id="O5o-UR-faA"/>
+                                                <constraint firstItem="7CF-MH-oN7" firstAttribute="top" secondItem="jam-8H-i1t" secondAttribute="topMargin" constant="18" id="SHg-yW-Rsa"/>
+                                                <constraint firstItem="0UP-fs-zJu" firstAttribute="leading" secondItem="7CF-MH-oN7" secondAttribute="trailing" constant="19" id="WLw-vJ-6CI"/>
+                                                <constraint firstItem="usT-3w-ojV" firstAttribute="height" secondItem="0UP-fs-zJu" secondAttribute="height" id="jBJ-Do-7Ft"/>
+                                                <constraint firstItem="0UP-fs-zJu" firstAttribute="height" secondItem="jam-8H-i1t" secondAttribute="height" multiplier="0.09" id="k33-yg-oFh"/>
+                                                <constraint firstItem="zLW-9V-SN5" firstAttribute="trailing" secondItem="usT-3w-ojV" secondAttribute="trailing" constant="-50" id="pUQ-CD-rHH"/>
+                                                <constraint firstItem="0UP-fs-zJu" firstAttribute="top" secondItem="7CF-MH-oN7" secondAttribute="top" id="r6X-fJ-ztu"/>
+                                                <constraint firstItem="usT-3w-ojV" firstAttribute="trailing" secondItem="0UP-fs-zJu" secondAttribute="trailing" id="vGU-el-fG7"/>
+                                                <constraint firstItem="usT-3w-ojV" firstAttribute="leading" secondItem="0UP-fs-zJu" secondAttribute="leading" id="zPy-qz-53p"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.86666666670000003" green="0.85882352939999995" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="firstLinePlaceholder" destination="0UP-fs-zJu" id="tUg-ns-Ieo"/>
+                                            <outlet property="picturePlaceholder" destination="7CF-MH-oN7" id="h4O-6q-TcX"/>
+                                            <outlet property="secondLinePlaceholder" destination="usT-3w-ojV" id="NUY-7g-LgU"/>
+                                            <outlet property="thirdLinePlaceholder" destination="zLW-9V-SN5" id="1Sg-PX-M3G"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

@@ -16,6 +16,7 @@
 		3481E0B01DD9EA9400326856 /* rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3481E0AF1DD9EA9400326856 /* rain.sks */; };
 		3481E0B31DD9EAC500326856 /* RainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481E0B11DD9EAC500326856 /* RainScene.swift */; };
 		3481E0B41DD9EAC500326856 /* RainyRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481E0B21DD9EAC500326856 /* RainyRefreshControl.swift */; };
+		34C94FFB1DE72D0400298B42 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C94FFA1DE72D0400298B42 /* CustomCell.swift */; };
 		34E3C27D1DDC7C1F004E5043 /* Umbrella.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3C27C1DDC7C1F004E5043 /* Umbrella.swift */; };
 		CCE8F2D38FB85D7B4FDB6314 /* Pods_RainyRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C908490ABE8126E51CB17E1 /* Pods_RainyRefresh.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		3481E0AF1DD9EA9400326856 /* rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = rain.sks; sourceTree = "<group>"; };
 		3481E0B11DD9EAC500326856 /* RainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainScene.swift; sourceTree = "<group>"; };
 		3481E0B21DD9EAC500326856 /* RainyRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainyRefreshControl.swift; sourceTree = "<group>"; };
+		34C94FFA1DE72D0400298B42 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		34E3C27C1DDC7C1F004E5043 /* Umbrella.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Umbrella.swift; sourceTree = "<group>"; };
 		3C908490ABE8126E51CB17E1 /* Pods_RainyRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A89860DBD59E4D48B5F8E73 /* Pods-RainyRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyRefresh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainyRefresh/Pods-RainyRefresh.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				3481E0A61DD9EA7F00326856 /* Info.plist */,
 				3481E0AF1DD9EA9400326856 /* rain.sks */,
 				34E3C27C1DDC7C1F004E5043 /* Umbrella.swift */,
+				34C94FFA1DE72D0400298B42 /* CustomCell.swift */,
 			);
 			path = RainyRefresh;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				34E3C27D1DDC7C1F004E5043 /* Umbrella.swift in Sources */,
 				3481E0B31DD9EAC500326856 /* RainScene.swift in Sources */,
 				3481E09B1DD9EA7F00326856 /* AppDelegate.swift in Sources */,
+				34C94FFB1DE72D0400298B42 /* CustomCell.swift in Sources */,
 				3481E0B41DD9EAC500326856 /* RainyRefreshControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -355,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RainyRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smallthings.HiredOnPhone.RainyRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RainyRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smallthings.HiredOnPhone.RainyRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
