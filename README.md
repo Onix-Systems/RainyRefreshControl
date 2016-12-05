@@ -10,4 +10,4 @@ Project inspired by [concept](https://dribbble.com/shots/2242263--1-Pull-to-refr
 
 ## License
 
-RainyRefreshControl is released under the MIT license. See LICENSE for details.
+RainyRefreshControl is released under the MIT license. See [LICENSE](LICENSE) for details.
