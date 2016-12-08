@@ -52,8 +52,7 @@ final class UmbrellaView:UIView {
         }
     }
     
-    // MARK: -
-    // MARK: Methods
+    // MARK: - Methods
     func setButtonState(state: UmbrellaState, animated: Bool) {
         if self.state == state {
             return
@@ -92,7 +91,7 @@ final class UmbrellaView:UIView {
         }
     }
     
-    func update(){
+    func update() {
         let midX = bounds.midX
         let midY = bounds.midY
         let width = bounds.width

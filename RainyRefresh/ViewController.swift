@@ -29,8 +29,7 @@ final class ViewController: UIViewController {
     }
 }
 
-// MARK: -
-// MARK: UITableViewDelegate
+// MARK: - UITableViewDelegate
 
 extension ViewController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -43,8 +42,7 @@ extension ViewController: UITableViewDelegate {
 
 }
 
-// MARK: -
-// MARK: UITableViewDataSource
+// MARK: - UITableViewDataSource
 
 extension ViewController: UITableViewDataSource {
     
@@ -64,17 +62,13 @@ extension ViewController: UITableViewDataSource {
     
 }
 
-// MARK: -
-// MARK: RainyRefreshControlDelegate
+// MARK: - RainyRefreshControlDelegate
 
 extension ViewController: RainyRefreshControlDelegate {
     func pullToRefreshDidTrigger(_ view: RainyRefreshControl) {
-        refreshHeaderView?.isLoading = true
-
         let delay = 3.0 * Double(NSEC_PER_SEC)
         let time  = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
         DispatchQueue.main.asyncAfter(deadline: time, execute: {
-            self.refreshHeaderView?.isLoading = false
             self.refreshHeaderView?.refreshScrollViewDataSourceDidFinishedLoading(self.tableView)
         })
     }
