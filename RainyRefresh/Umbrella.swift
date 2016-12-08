@@ -52,8 +52,7 @@ final class UmbrellaView:UIView {
         }
     }
     
-    // MARK: -
-    // MARK: Methods
+    // MARK: - Methods
     func setButtonState(state: UmbrellaState, animated: Bool) {
         if self.state == state {
             return

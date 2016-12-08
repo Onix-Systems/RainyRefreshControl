@@ -90,7 +90,7 @@ final class RainyRefreshControl: UIView {
         umbrellaView.center = CGPoint(x: center.x, y: skView.frame.height-thresholdValue/2)
     }
     
-    // MARK:ScrollView Methods
+    // MARK: - ScrollView Methods
     
     public func refreshScrollViewDidScroll(_ scrollView: UIScrollView) {
         if state == .loading {
