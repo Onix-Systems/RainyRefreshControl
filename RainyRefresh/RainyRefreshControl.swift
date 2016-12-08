@@ -15,13 +15,13 @@ protocol RainyRefreshControlDelegate {
 
 final class RainyRefreshControl: UIView {
 
-    enum RefreshState {
+    private enum RefreshState {
         case normal
         case pulling
         case loading
     }
     
-    public var state: RefreshState = .normal {
+    private var state: RefreshState = .normal {
         didSet {
             switch state {
             case .pulling:
