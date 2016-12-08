@@ -21,24 +21,9 @@ final class RainyRefreshControl: UIView {
         case loading
     }
     
-    private var _isLoading = false
-    public var isLoading: Bool {
-        get {
-            return _isLoading
-        }
-        set {
-            _isLoading = state == .loading
-        }
-    }
-    
-    
-    private var _state: RefreshState = .normal
-    public var state: RefreshState {
-        get {
-            return _state
-        }
-        set {
-            switch newValue {
+    public var state: RefreshState = .normal {
+        didSet {
+            switch state {
             case .pulling:
                 scene?.particles.particleBirthRate = 0
             case .loading:
@@ -47,9 +32,9 @@ final class RainyRefreshControl: UIView {
                 CATransaction.begin()
                 CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
                 CATransaction.commit()
-            default: scene?.particles.particleBirthRate = 0
+            default:
+                scene?.particles.particleBirthRate = 0
             }
-            _state = newValue
         }
     }
 
@@ -93,13 +78,11 @@ final class RainyRefreshControl: UIView {
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         skView.ignoresSiblingOrder = true
         
-        //        if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
         scene = RainScene(size: skView.bounds.size)
         // Configure the view.
         scene?.backgroundColor = bgColor
         /* Set the scale mode to scale to fit the window */
         scene?.scaleMode = .aspectFill
-//        scene?.position = CGPoint(x: 0, y: 0);
         scene?.particles.particleBirthRate = 0
         skView.presentScene(scene)
         let width = thresholdValue*0.36
