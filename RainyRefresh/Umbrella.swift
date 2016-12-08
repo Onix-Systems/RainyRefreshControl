@@ -91,7 +91,7 @@ final class UmbrellaView:UIView {
         }
     }
     
-    func update(){
+    func update() {
         let midX = bounds.midX
         let midY = bounds.midY
         let width = bounds.width
