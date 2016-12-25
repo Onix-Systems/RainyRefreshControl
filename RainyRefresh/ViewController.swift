@@ -14,30 +14,20 @@ final class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate var refreshHeaderView: RainyRefreshControl?
+    fileprivate let refresh = RainyRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor.white
-        
-        if refreshHeaderView == nil {
-            let view = RainyRefreshControl(frame: CGRect(x: 0, y: 0 - tableView.bounds.size.height, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            view.delegate = self
-            tableView.addSubview(view)
-            refreshHeaderView = view
-        }
-    }
-}
-
-// MARK: - UITableViewDelegate
-
-extension ViewController: UITableViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        refreshHeaderView?.refreshScrollViewDidScroll(scrollView)
+        refresh.addTarget(self, action: #selector(ViewController.doRefresh), for: .valueChanged)
+        tableView.addSubview(refresh)
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        refreshHeaderView?.refreshScrollViewDidEndDragging(scrollView)
+    func doRefresh(){
+        let popTime = DispatchTime.now() + Double(Int64(3.0 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC);
+        DispatchQueue.main.asyncAfter(deadline: popTime) { () -> Void in
+            self.refresh.endRefreshing()
+        }
     }
 
 }
@@ -61,17 +51,3 @@ extension ViewController: UITableViewDataSource {
     }
     
 }
-
-// MARK: - RainyRefreshControlDelegate
-
-extension ViewController: RainyRefreshControlDelegate {
-    func pullToRefreshDidTrigger(_ view: RainyRefreshControl) {
-        let delay = 3.0 * Double(NSEC_PER_SEC)
-        let time  = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
-        DispatchQueue.main.asyncAfter(deadline: time, execute: {
-            self.refreshHeaderView?.refreshScrollViewDataSourceDidFinishedLoading(self.tableView)
-        })
-    }
-
-}
-
