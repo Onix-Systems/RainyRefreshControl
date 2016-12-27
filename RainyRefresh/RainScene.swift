@@ -32,6 +32,6 @@ final class RainScene: SKScene {
     }
     
     func layout(){
-        particles.position = CGPoint(x: size.width, y: size.height)
+        particles.position = CGPoint(x: size.width/2, y: size.height)
     }
 }
