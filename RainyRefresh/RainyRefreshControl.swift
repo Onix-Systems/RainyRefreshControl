@@ -18,7 +18,7 @@ final class RainyRefreshControl: ONXRefreshControl {
     private var thresholdValue: CGFloat = 100.0
     
     override func setup() {
-        delayBeforeEnd = 0.4
+        delayBeforeEnd = 0.2
         
         backgroundView = SKView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
         backgroundView.backgroundColor = bgColor
@@ -30,7 +30,6 @@ final class RainyRefreshControl: ONXRefreshControl {
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         backgroundView.ignoresSiblingOrder = true
         
-        //        if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
         scene = RainScene(size: backgroundView.bounds.size)
         // Configure the view.
         scene?.backgroundColor = bgColor
