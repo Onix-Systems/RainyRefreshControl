@@ -26,8 +26,12 @@ final class RainScene: SKScene {
     func setup(){
         if let p = SKEmitterNode(fileNamed: "rain.sks") {
             particles = p
-            particles.position = CGPoint(x: size.width, y: size.height/2)
+            layout()
             addChild(particles)
         }
+    }
+    
+    func layout(){
+        particles.position = CGPoint(x: size.width/2, y: size.height)
     }
 }
