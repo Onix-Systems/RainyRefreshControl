@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3468C5FF1E1CFDC00067B795 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468C5FE1E1CFDC00067B795 /* CustomCell.swift */; };
+		34FD097B1E1CEC26005DB2B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FD097A1E1CEC26005DB2B7 /* AppDelegate.swift */; };
+		34FD097D1E1CEC26005DB2B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FD097C1E1CEC26005DB2B7 /* ViewController.swift */; };
+		34FD09801E1CEC26005DB2B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FD097E1E1CEC26005DB2B7 /* Main.storyboard */; };
+		34FD09821E1CEC26005DB2B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FD09811E1CEC26005DB2B7 /* Assets.xcassets */; };
+		34FD09851E1CEC26005DB2B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FD09831E1CEC26005DB2B7 /* LaunchScreen.storyboard */; };
+		FE38C44CEB6607C36C5D2FC0 /* Pods_RainyRefreshControl_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07D806FAA3746CC05A8D490 /* Pods_RainyRefreshControl_Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3468C5FE1E1CFDC00067B795 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		34FD09771E1CEC26005DB2B7 /* RainyRefreshControl Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RainyRefreshControl Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FD097A1E1CEC26005DB2B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34FD097C1E1CEC26005DB2B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34FD097F1E1CEC26005DB2B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34FD09811E1CEC26005DB2B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34FD09841E1CEC26005DB2B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34FD09861E1CEC26005DB2B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07D806FAA3746CC05A8D490 /* Pods_RainyRefreshControl_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyRefreshControl_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA29EEE8A126E413D5E223A1 /* Pods-RainyRefreshControl Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyRefreshControl Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainyRefreshControl Demo/Pods-RainyRefreshControl Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		DB34A65DF16C2AAC520C28F5 /* Pods-RainyRefreshControl Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyRefreshControl Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainyRefreshControl Demo/Pods-RainyRefreshControl Demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34FD09741E1CEC25005DB2B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE38C44CEB6607C36C5D2FC0 /* Pods_RainyRefreshControl_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03AB183BDACC0352CFF95849 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07D806FAA3746CC05A8D490 /* Pods_RainyRefreshControl_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34FD096E1E1CEC25005DB2B7 = {
+			isa = PBXGroup;
+			children = (
+				34FD09791E1CEC26005DB2B7 /* RainyRefreshControl Demo */,
+				34FD09781E1CEC26005DB2B7 /* Products */,
+				5BF9E00479B85FAE5503E7BD /* Pods */,
+				03AB183BDACC0352CFF95849 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34FD09781E1CEC26005DB2B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34FD09771E1CEC26005DB2B7 /* RainyRefreshControl Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FD09791E1CEC26005DB2B7 /* RainyRefreshControl Demo */ = {
+			isa = PBXGroup;
+			children = (
+				34FD097A1E1CEC26005DB2B7 /* AppDelegate.swift */,
+				3468C5FE1E1CFDC00067B795 /* CustomCell.swift */,
+				34FD097C1E1CEC26005DB2B7 /* ViewController.swift */,
+				34FD097E1E1CEC26005DB2B7 /* Main.storyboard */,
+				34FD09811E1CEC26005DB2B7 /* Assets.xcassets */,
+				34FD09831E1CEC26005DB2B7 /* LaunchScreen.storyboard */,
+				34FD09861E1CEC26005DB2B7 /* Info.plist */,
+			);
+			path = "RainyRefreshControl Demo";
+			sourceTree = "<group>";
+		};
+		5BF9E00479B85FAE5503E7BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA29EEE8A126E413D5E223A1 /* Pods-RainyRefreshControl Demo.debug.xcconfig */,
+				DB34A65DF16C2AAC520C28F5 /* Pods-RainyRefreshControl Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34FD09761E1CEC25005DB2B7 /* RainyRefreshControl Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FD09891E1CEC26005DB2B7 /* Build configuration list for PBXNativeTarget "RainyRefreshControl Demo" */;
+			buildPhases = (
+				69CF4B6C3AF1FD135438EC6D /* [CP] Check Pods Manifest.lock */,
+				34FD09731E1CEC25005DB2B7 /* Sources */,
+				34FD09741E1CEC25005DB2B7 /* Frameworks */,
+				34FD09751E1CEC25005DB2B7 /* Resources */,
+				6A828EA81ED3C0BA57B8B727 /* [CP] Embed Pods Frameworks */,
+				D88A3123F3730566E5E746FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RainyRefreshControl Demo";
+			productName = "RainyRefreshControl Demo";
+			productReference = 34FD09771E1CEC26005DB2B7 /* RainyRefreshControl Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34FD096F1E1CEC25005DB2B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Onix-Systems";
+				TargetAttributes = {
+					34FD09761E1CEC25005DB2B7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 34FD09721E1CEC25005DB2B7 /* Build configuration list for PBXProject "RainyRefreshControl Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34FD096E1E1CEC25005DB2B7;
+			productRefGroup = 34FD09781E1CEC26005DB2B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34FD09761E1CEC25005DB2B7 /* RainyRefreshControl Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34FD09751E1CEC25005DB2B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FD09851E1CEC26005DB2B7 /* LaunchScreen.storyboard in Resources */,
+				34FD09821E1CEC26005DB2B7 /* Assets.xcassets in Resources */,
+				34FD09801E1CEC26005DB2B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69CF4B6C3AF1FD135438EC6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A828EA81ED3C0BA57B8B727 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainyRefreshControl Demo/Pods-RainyRefreshControl Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D88A3123F3730566E5E746FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainyRefreshControl Demo/Pods-RainyRefreshControl Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34FD09731E1CEC25005DB2B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FD097D1E1CEC26005DB2B7 /* ViewController.swift in Sources */,
+				3468C5FF1E1CFDC00067B795 /* CustomCell.swift in Sources */,
+				34FD097B1E1CEC26005DB2B7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34FD097E1E1CEC26005DB2B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FD097F1E1CEC26005DB2B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34FD09831E1CEC26005DB2B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FD09841E1CEC26005DB2B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34FD09871E1CEC26005DB2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34FD09881E1CEC26005DB2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34FD098A1E1CEC26005DB2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA29EEE8A126E413D5E223A1 /* Pods-RainyRefreshControl Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RainyRefreshControl Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onix.rainyrefresh.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		34FD098B1E1CEC26005DB2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB34A65DF16C2AAC520C28F5 /* Pods-RainyRefreshControl Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RainyRefreshControl Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onix.rainyrefresh.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34FD09721E1CEC25005DB2B7 /* Build configuration list for PBXProject "RainyRefreshControl Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FD09871E1CEC26005DB2B7 /* Debug */,
+				34FD09881E1CEC26005DB2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FD09891E1CEC26005DB2B7 /* Build configuration list for PBXNativeTarget "RainyRefreshControl Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FD098A1E1CEC26005DB2B7 /* Debug */,
+				34FD098B1E1CEC26005DB2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34FD096F1E1CEC25005DB2B7 /* Project object */;
+}
