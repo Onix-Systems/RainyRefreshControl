@@ -21,7 +21,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 
 target 'TargetName' do
-pod 'RainyRefreshControl', :git => 'https://github.com/Onix-Systems/RainyRefreshControl', :branch => 'feature/remove-sample-project'
+pod 'RainyRefreshControl'
 end
 ```
 
