@@ -1,0 +1,6 @@
+framework module RainyRefreshControl {
+  umbrella header "RainyRefreshControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
