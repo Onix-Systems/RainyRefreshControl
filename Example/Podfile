@@ -1,0 +1,8 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'RainyRefreshControl Demo' do
+
+    pod 'RainyRefreshControl', :git => 'https://github.com/Onix-Systems/RainyRefreshControl', :branch => 'feature/remove-sample-project'
+    
+end
