@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'RainyRefreshControl'
-  s.version = '0.2.0'
+  s.version = '0.3.0'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'Simple refresh control for iOS based on POP, SpriteKit and Core Graphics'
   s.homepage = 'https://github.com/Onix-Systems/RainyRefreshControl'
