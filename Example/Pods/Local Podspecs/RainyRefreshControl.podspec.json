@@ -29,10 +29,5 @@
   },
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "3"
-  },
-  "dependencies": {
-    "pop": [
-      "1.0.9"
-    ]
   }
 }
