@@ -6,7 +6,7 @@
 //  Copyright © 2016 Onix Systems. All rights reserved.
 //
 
-import pop
+import UIKit
 
 enum UmbrellaState {
     case closed
@@ -18,11 +18,64 @@ enum UmbrellaState {
 
 final class UmbrellaView:UIView {
     
-    var lineWidth:CGFloat = 3.0
-    var strokeColor: UIColor = .red
+    var lineWidth:CGFloat = 1.0
+    var strokeColor: UIColor = .white
+
+    private(set) var state = UmbrellaState.closed
+    private var animationValue: CGFloat {
+        set {
+            if let layer = layer as? UmbrellaLayer {
+                layer.animationValue = newValue
+            }
+        }
+        get {
+            if let layer = layer as? UmbrellaLayer {
+                return layer.animationValue
+            }
+            return 0.0
+        }
+    }
     
-    //A,B,C,D,E - origin coords
-    //a,b,c,d,e - control points
+    override class var layerClass : AnyClass {
+        return UmbrellaLayer.self
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        if let layer = layer as? UmbrellaLayer {
+            layer.contentsScale = UIScreen.main.scale
+            layer.lineWidth = lineWidth
+            layer.strokeColor = strokeColor
+        }
+        animationValue = 1
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    // MARK: - Methods
+    func setButtonState(state: UmbrellaState, animated: Bool) {
+        if self.state == state {
+            return
+        }
+        self.state = state
+        
+        let toValue: CGFloat = state.value
+        if animated {
+            UIView.animate(withDuration: 0.25, animations: {
+                self.animationValue = toValue
+            })
+        } else {
+            animationValue = toValue
+        }
+    }
+}
+
+final class UmbrellaLayer:CALayer {
+    @NSManaged var animationValue: CGFloat
+    var lineWidth:CGFloat = 1.0
+    var strokeColor:UIColor = .white
     
     private var APoint:CGPoint!
     private var aPoint:CGPoint!
@@ -45,50 +98,31 @@ final class UmbrellaView:UIView {
     
     private var FPoint:CGPoint!
     
-    private(set) var state = UmbrellaState.closed
-    private var animationValue: CGFloat = 1.0 {
-        didSet {
-            setNeedsDisplay()
-        }
+    fileprivate class func isCustomAnimKey(_ key: String) -> Bool {
+        return key == "animationValue"
     }
     
-    // MARK: - Methods
-    func setButtonState(state: UmbrellaState, animated: Bool) {
-        if self.state == state {
-            return
+    override class func needsDisplay(forKey key: String) -> Bool {
+        if self.isCustomAnimKey(key) {
+            return true
         }
-        self.state = state
-        if pop_animation(forKey: "animationValue") != nil {
-            pop_removeAnimation(forKey: "animationValue")
-        }
-        
-        let toValue: CGFloat = state.value
-        if animated {
-            let animation: POPBasicAnimation = POPBasicAnimation()
-            if let property = POPAnimatableProperty.property(withName: "animationValue", initializer: { prop in
-                prop?.readBlock = { (object: Any?, values: UnsafeMutablePointer<CGFloat>?) -> Void in
-                    if let view = object as? UmbrellaView {
-                        values?[0] = view.animationValue
-                    }
+        return super.needsDisplay(forKey: key)
+    }
+    
+    override func action(forKey event: String) -> CAAction? {
+        if UmbrellaLayer.isCustomAnimKey(event) {
+            if let animation = super.action(forKey: "backgroundColor") as? CABasicAnimation {
+                animation.keyPath = event
+                if let pLayer = presentation() {
+                    animation.fromValue = pLayer.animationValue
                 }
-                prop?.writeBlock = { (object: Any?, values: UnsafePointer<CGFloat>?) -> Void in
-                    if let button = object as? UmbrellaView,
-                        let values = values {
-                        button.animationValue = values[0]
-                    }
-                }
-                prop?.threshold = 0.01
-            }) as? POPAnimatableProperty {
-                animation.property = property
+                animation.toValue = nil
+                return animation
             }
-            animation.fromValue = NSNumber(value: Float(self.animationValue))
-            animation.toValue = NSNumber(value: Float(toValue))
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-            animation.duration = 0.25
-            pop_add(animation, forKey: "percentage")
-        } else {
-            animationValue = toValue
+            setNeedsDisplay()
+            return nil
         }
+        return super.action(forKey: event)
     }
     
     func update() {
@@ -118,18 +152,16 @@ final class UmbrellaView:UIView {
         FPoint = CGPoint(x: midX, y: (midY-height*0.3683)-(0.0016*animationValue))
     }
     
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        update()
+    override func draw(in ctx: CGContext) {
+        super.draw(in: ctx)
+        ctx.setStrokeColor(strokeColor.cgColor)
+        ctx.setLineWidth(lineWidth)
         
+        update()
         //// Draw a handle
         let bezierPath = UIBezierPath()
         bezierPath.move(to: CGPoint(x: bounds.midX, y: bounds.midY+bounds.height*0.4266))
         bezierPath.addLine(to: CGPoint(x: bounds.midX, y: bounds.midY-bounds.height*0.415))
-        strokeColor.setStroke()
-        bezierPath.lineWidth = lineWidth
-        bezierPath.lineCapStyle = .round
-        bezierPath.stroke()
         
         let arrayOfDots:[(CGPoint,CGPoint,CGPoint,CGPoint)] = [(APoint,FPoint,aPoint,FPoint),
                                                                (FPoint,EPoint,FPoint,ePoint),
@@ -141,13 +173,12 @@ final class UmbrellaView:UIView {
                                                                (DPoint,EPoint,DPoint,e1Point)]
         
         arrayOfDots.forEach { (a,b,c,d) in
-            let path = UIBezierPath()
-            path.move(to: a)
-            path.addCurve(to: b, controlPoint1: c, controlPoint2: d)
-            strokeColor.setStroke()
-            path.lineWidth = lineWidth
-            path.lineCapStyle = .round
-            path.stroke()
+            bezierPath.move(to: a)
+            bezierPath.addCurve(to: b, controlPoint1: c, controlPoint2: d)
         }
+        ctx.addPath(bezierPath.cgPath)
+        ctx.setLineCap(.round)
+        ctx.strokePath()
     }
+    
 }

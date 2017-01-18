@@ -15,6 +15,5 @@ Pod::Spec.new do |s|
   s.frameworks   = 'SpriteKit'
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
-  s.dependency 'pop', '1.0.9'
 
 end
