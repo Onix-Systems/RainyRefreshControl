@@ -10,6 +10,38 @@ Project inspired by [concept](https://dribbble.com/shots/2242263--1-Pull-to-refr
 
 ![capture_umbrella_refresh](gif/umbrella_refresh.gif "capture_umbrella_refresh")
 
+## Installation
+
+## Installation with CocoaPods
+
+To integrate RainyRefreshControl into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+target 'TargetName' do
+pod 'RainyRefreshControl'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+## Usage
+
+Just import RainyRefreshControl framework into your class and add it to UITableView or UICollectionView:
+
+```swift
+let refresh = RainyRefreshControl()
+refresh.addTarget(self, action: #selector(ViewController.doRefresh), for: .valueChanged)
+tableView.addSubview(refresh)
+
+```
+
 ## License
 
 RainyRefreshControl is released under the MIT license. See [LICENSE](LICENSE) for details.

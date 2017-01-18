@@ -1,25 +1,22 @@
 PODS:
-  - pop (1.0.9)
-  - RainyRefreshControl (0.2.0):
-    - pop (= 1.0.9)
+  - RainyRefreshControl (0.2.0)
 
 DEPENDENCIES:
-  - RainyRefreshControl (from `https://github.com/Onix-Systems/RainyRefreshControl`, branch `feature/remove-sample-project`)
+  - RainyRefreshControl (from `https://github.com/Onix-Systems/RainyRefreshControl`, branch `feature/remove-pop`)
 
 EXTERNAL SOURCES:
   RainyRefreshControl:
-    :branch: feature/remove-sample-project
+    :branch: feature/remove-pop
     :git: https://github.com/Onix-Systems/RainyRefreshControl
 
 CHECKOUT OPTIONS:
   RainyRefreshControl:
-    :commit: 3d411c66108c9022a173f3b7275d94cd0668a8ea
+    :commit: 7f13e7e243f851840802b56b5d21f24dd3e9b138
     :git: https://github.com/Onix-Systems/RainyRefreshControl
 
 SPEC CHECKSUMS:
-  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  RainyRefreshControl: e4718413438a92edfce3e90b74cba0e5fccfd88a
+  RainyRefreshControl: 7be63e37b6f4eb155f6327445967e83b48cd9336
 
-PODFILE CHECKSUM: 19b644a50858bac13f7f1af5ee9d9728d76ac170
+PODFILE CHECKSUM: 8bcbd7f984c86572a3b151d8bcc571009da8d3ab
 
 COCOAPODS: 1.2.0.beta.3
