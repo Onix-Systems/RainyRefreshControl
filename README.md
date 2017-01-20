@@ -14,7 +14,7 @@ Project inspired by [concept](https://dribbble.com/shots/2242263--1-Pull-to-refr
 
 ## Installation
 
-## Installation with CocoaPods
+### Installation with CocoaPods
 
 To integrate RainyRefreshControl into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
@@ -62,6 +62,12 @@ refresh.addTarget(self, action: #selector(ViewController.doRefresh), for: .value
 tableView.addSubview(refresh)
 
 ```
+
+## Who's behind this?
+
+[Onix-Systems](https://onix-systems.com) is a front end and back end development and mobile application development company bringing expert execution, situated in Ukraine.
+
+[<img src="https://onix-systems.com/img/static/onix-logo.svg" width="340" />](https://onix-systems.com)
 
 ## License
 
