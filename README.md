@@ -65,7 +65,7 @@ tableView.addSubview(refresh)
 
 ## Who's behind this?
 
-[Onix-Systems](https://onix-systems.com) is a front end and back end development and mobile application development company bringing expert execution, situated in Ukraine.
+[Onix-Systems](https://onix-systems.com) is IT Outsourcing, web design and mobile application development company bringing expert execution, situated in Ukraine.
 
 [<img src="https://onix-systems.com/img/static/onix-logo.svg" width="340" />](https://onix-systems.com)
 
