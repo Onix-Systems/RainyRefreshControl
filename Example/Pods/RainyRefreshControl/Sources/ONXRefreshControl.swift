@@ -94,7 +94,7 @@ public class ONXRefreshControl: UIControl {
                            delay: 0,
                            usingSpringWithDamping: self.animationDamping,
                            initialSpringVelocity: self.animationVelocity,
-                           options: UIViewAnimationOptions.curveLinear,
+                           options: UIView.AnimationOptions.curveLinear,
                            animations: { () -> Void in
                             if let contentInset = self.contentInset {
                                 superview.contentInset = contentInset
