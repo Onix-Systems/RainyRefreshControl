@@ -42,29 +42,29 @@
 
 /* Begin PBXFileReference section */
 		0249A9C977E2C510FF1F675627C9C583 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SpriteKit.framework; sourceTree = DEVELOPER_DIR; };
-		04289EB8997D4D67AFE5867D122F8EF9 /* rain.sks */ = {isa = PBXFileReference; includeInIndex = 1; name = rain.sks; path = Sources/Assets/rain.sks; sourceTree = "<group>"; };
+		04289EB8997D4D67AFE5867D122F8EF9 /* rain.sks */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.sks; name = rain.sks; path = Sources/Assets/rain.sks; sourceTree = "<group>"; };
 		0CD0EC2A28ED7C0A8975B44D4E5DC8FB /* RainScene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RainScene.swift; path = Sources/RainScene.swift; sourceTree = "<group>"; };
 		1F1B8F94FE3C389136C8243C23447433 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358D798B5448EE272570F3FB7C7B7C56 /* Pods-RainyRefreshControl Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RainyRefreshControl Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		36B1838FB46DFC4770A4C677D5528929 /* Pods-RainyRefreshControl Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RainyRefreshControl Demo-dummy.m"; sourceTree = "<group>"; };
 		4BD07A557C9990D4E2DC026B40C7426C /* RainyRefreshControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RainyRefreshControl-prefix.pch"; sourceTree = "<group>"; };
-		4C5E2DC96C868A97DE6F99B512ED026A /* RainyRefreshControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RainyRefreshControl.bundle; path = RainyRefreshControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E86CC189B340AC19D3FE3E82221B0C0 /* RainyRefreshControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RainyRefreshControl.modulemap; sourceTree = "<group>"; };
+		4C5E2DC96C868A97DE6F99B512ED026A /* RainyRefreshControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyRefreshControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E86CC189B340AC19D3FE3E82221B0C0 /* RainyRefreshControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RainyRefreshControl.modulemap; sourceTree = "<group>"; };
 		4F72EB8650F04E579A635DD1BA9F94A7 /* ResourceBundle-RainyRefreshControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RainyRefreshControl-Info.plist"; sourceTree = "<group>"; };
-		51435AFAC671806990011AA0BE63FF71 /* RainyRefreshControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RainyRefreshControl.framework; path = RainyRefreshControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51435AFAC671806990011AA0BE63FF71 /* RainyRefreshControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RainyRefreshControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B96D7DFA8DF9476B3B43E0D80B0679 /* Pods-RainyRefreshControl Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RainyRefreshControl Demo.release.xcconfig"; sourceTree = "<group>"; };
 		599F0A78ADBEFE1A0027A79573B78D76 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		603FF8F9571C8CEB39C968BEDEA8A347 /* RainyRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RainyRefreshControl.swift; path = Sources/RainyRefreshControl.swift; sourceTree = "<group>"; };
-		744ADBE3F7E408DF64BE1C90AE9D595E /* Pods-RainyRefreshControl Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RainyRefreshControl Demo.modulemap"; sourceTree = "<group>"; };
+		744ADBE3F7E408DF64BE1C90AE9D595E /* Pods-RainyRefreshControl Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RainyRefreshControl Demo.modulemap"; sourceTree = "<group>"; };
 		75CF1B3AAE05B60F257A819AA5E75B91 /* RainyRefreshControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RainyRefreshControl.xcconfig; sourceTree = "<group>"; };
 		7A11E230CDE48A203DFBD37FEA42CA9F /* Pods-RainyRefreshControl Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RainyRefreshControl Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7D95D28D202017A37F35888C826E8822 /* Pods-RainyRefreshControl Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RainyRefreshControl Demo-umbrella.h"; sourceTree = "<group>"; };
 		8A0EECCD134614751336E00A6A4CA253 /* Umbrella.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Umbrella.swift; path = Sources/Umbrella.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93E72975AA3437F17EB8F98E484046DF /* RainyRefreshControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RainyRefreshControl-umbrella.h"; sourceTree = "<group>"; };
-		96068DD34EB8073E9E3B0FBD08A6764A /* Pods_RainyRefreshControl_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RainyRefreshControl_Demo.framework; path = "Pods-RainyRefreshControl Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96068DD34EB8073E9E3B0FBD08A6764A /* Pods_RainyRefreshControl_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyRefreshControl_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1B9452E1150161A96FE6B82E4B2F30 /* Pods-RainyRefreshControl Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RainyRefreshControl Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		9CF739DC20FBEFC3E2E16CAD9FBDE575 /* spark.png */ = {isa = PBXFileReference; includeInIndex = 1; name = spark.png; path = Sources/Assets/spark.png; sourceTree = "<group>"; };
+		9CF739DC20FBEFC3E2E16CAD9FBDE575 /* spark.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = spark.png; path = Sources/Assets/spark.png; sourceTree = "<group>"; };
 		9FB9816AA9E22141BC5F0BFBBB40E0FF /* Pods-RainyRefreshControl Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RainyRefreshControl Demo-frameworks.sh"; sourceTree = "<group>"; };
 		CBEC8AD3AD90316F4E5E4C1B37D6F84F /* RainyRefreshControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RainyRefreshControl-dummy.m"; sourceTree = "<group>"; };
 		DAFEC787B80A591C422A1BB110B84EF3 /* Pods-RainyRefreshControl Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RainyRefreshControl Demo-resources.sh"; sourceTree = "<group>"; };
@@ -181,7 +181,6 @@
 				6A2E9DF26E496C1F6A4502FB2A42F826 /* Resources */,
 				FBDCD54F4ADAFCB178A7345CCBC9FCB3 /* Support Files */,
 			);
-			name = RainyRefreshControl;
 			path = RainyRefreshControl;
 			sourceTree = "<group>";
 		};
@@ -294,12 +293,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					DF75062C53A3BA790E8409B42895F92B = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -449,7 +454,7 @@
 				PRODUCT_NAME = RainyRefreshControl;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -627,7 +632,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

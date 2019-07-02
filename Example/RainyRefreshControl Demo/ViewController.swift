@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor.white
-        refresh.addTarget(self, action: #selector(ViewController.doRefresh), for: .valueChanged)
+        refresh.addTarget(self, action: #selector(self.doRefresh), for: .valueChanged)
         tableView.addSubview(refresh)
     }
     
-    func doRefresh(){
+    @objc func doRefresh(){
         let popTime = DispatchTime.now() + Double(Int64(3.0 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC);
         DispatchQueue.main.asyncAfter(deadline: popTime) { () -> Void in
             self.refresh.endRefreshing()
